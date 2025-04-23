@@ -1,8 +1,7 @@
 # Deploy-SpringBoot-REST-Helloworld-AWS-Kubernetes
 Deploy Spring Boot REST HelloWorld application into AWS Kubernetes (EKS)
 
-
-##  Create EKS Cluster with eksctl
+##  Create EKS Cluster with eksctl  (ONLY FOR TESTING PURPOSE, NOT FOR PRODUCTION)
 
 ```
 eksctl create cluster --name ekscluster2 --nodegroup-name ekscluster-node-group  --node-type t2.micro --nodes 4 --nodes-min 4 --nodes-max 8 --managed --asg-access
@@ -22,13 +21,13 @@ kubectl apply -f service.yaml
 
 ## Test helloworld REST service 
 
-# Find External IP 
+## Find External IP 
 
 ```
 kubectl get svc
 ```
 
-# Access URL
+## Access URL
 
 ```
 http://<EXTERNAL-IP>/hello
