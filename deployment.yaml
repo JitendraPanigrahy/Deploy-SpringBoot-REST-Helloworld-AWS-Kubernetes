@@ -13,7 +13,7 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: dockerusertwo/testrepo2025:1.0.0-RELEASE
+      - image: <docker-hub-image-url> 
         imagePullPolicy: IfNotPresent
         name: helloworld
         ports:
