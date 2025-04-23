@@ -8,7 +8,9 @@ eksctl create cluster --name ekscluster2 --nodegroup-name ekscluster-node-group 
 ```
 
 ## Deploy helloworld application into EKS cluster using YAML file
-
+## Note: 
+## Specify your image name against image tag under containers secion in deployment.yaml. 
+## Image may come from docker hub or aws ecr or any other
 ```
 kubectl apply -f deployment.yaml
 ```
