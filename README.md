@@ -8,9 +8,8 @@ eksctl create cluster --name ekscluster2 --nodegroup-name ekscluster-node-group 
 ```
 
 ## Deploy helloworld application into EKS cluster using YAML file
-## Note: 
-## Specify your image name against image tag under containers secion in deployment.yaml. 
-## Image may come from docker hub or aws ecr or any other
+### Note: Specify your image name against image tag under containers secion in deployment.yaml. 
+### Image may come from docker hub or aws ecr or any other
 ```
 kubectl apply -f deployment.yaml
 ```
@@ -23,13 +22,13 @@ kubectl apply -f service.yaml
 
 ## Test helloworld REST service 
 
-## Find External IP 
+### Find External IP 
 
 ```
 kubectl get svc
 ```
 
-## Access URL
+### Access app using url
 
 ```
 http://<EXTERNAL-IP>/hello
